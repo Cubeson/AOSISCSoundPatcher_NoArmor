@@ -33,6 +33,7 @@ namespace AOSISCSoundPatcher
             if (iscActive)
             {
                 // Patch Armor sounds, Rings (pick up sound) & Necklaces equip and unequip sounds.
+                /*
                 foreach (var armor in state.LoadOrder.PriorityOrder.Armor().WinningOverrides())
                 {
                     if (armor.Keywords == null) continue;
@@ -71,6 +72,7 @@ namespace AOSISCSoundPatcher
                     if (armor.PickUpSound.FormKey != armorCopy.PickUpSound.FormKey || armor.PutDownSound.FormKey != armorCopy.PutDownSound.FormKey)
                         state.PatchMod.Armors.Set(armorCopy);
                 }
+                */
 
                 // Patch weapon swing and impact sounds.
                 foreach (var weapon in state.LoadOrder.PriorityOrder.Weapon().WinningOverrides())
